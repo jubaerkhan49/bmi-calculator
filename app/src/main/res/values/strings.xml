@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">BMI Calculator</string>
+    <string name="hint_weight">Enter weight (kg)</string>
+    <string name="hint_height">Enter height (m)</string>
+    <string name="btn_calculate">Calculate BMI</string>
+    <string name="result_bmi">Your BMI: %1$s</string>
+    <string name="error_input">Please enter both weight and height.</string>
+    <string name="suggestion_underweight">You are underweight. Consider a balanced diet and consulting with a nutritionist.</string>
+    <string name="suggestion_normal">You have a normal weight. Maintain your current lifestyle to stay healthy.</string>
+    <string name="suggestion_overweight">You are overweight. Consider a healthy diet and regular exercise.</string>
+    <string name="suggestion_obese">You are obese. It\'s advisable to seek guidance from a healthcare professional.</string>
+</resources>
