@@ -1,28 +1,38 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
-    android:padding="16dp"
     android:id="@+id/main"
-    tools:context=".BmiResult"
-    android:gravity="center">
+    tools:context=".BmiResult">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
 
-<TextView
-    android:id="@+id/tvBmiResult"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:textSize="24sp"
-    android:textStyle="bold"
-    android:gravity="center"
-    android:padding="20dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/tvBmiResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:padding="20dp"/>
 
-<TextView
-    android:id="@+id/tvBmiSuggestion"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:textSize="18sp"
-    android:gravity="center"
-    android:padding="20dp"/>
+        <TextView
+            android:id="@+id/tvBmiSuggestion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:padding="20dp"/>
 
+    </LinearLayout>
 </LinearLayout>
+
