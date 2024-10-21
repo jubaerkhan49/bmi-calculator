@@ -1,10 +1,12 @@
 plugins {
     alias(libs.plugins.android.application)
+    id("org.jetbrains.dokka") version "1.9.20"
+    alias(libs.plugins.jetbrains.kotlin.android)
 }
 
 android {
     namespace = "com.example.bmicalculator"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.example.bmicalculator"
@@ -29,10 +31,13 @@ android {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
     }
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
 }
 
 dependencies {
-
+    dokkaPlugin("org.jetbrains.dokka:android-documentation-plugin:1.9.20")
     implementation(libs.appcompat)
     implementation(libs.material)
     implementation(libs.activity)

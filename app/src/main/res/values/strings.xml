@@ -9,4 +9,6 @@
     <string name="suggestion_normal">You have a normal weight. Maintain your current lifestyle to stay healthy.</string>
     <string name="suggestion_overweight">You are overweight. Consider a healthy diet and regular exercise.</string>
     <string name="suggestion_obese">You are obese. It\'s advisable to seek guidance from a healthcare professional.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
